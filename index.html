@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zagreb Culture</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <div class="brand-logo">
+      <img src="images/logo.png" alt="Zagreb Culture logo">
+    </div>
+
+    <div class="brand-text">
+      <h3>Zagreb Culture</h3>
+      <p>Tvoja kultura, tvoj grad</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="#bastina" class="nav-link">Baština</a>
+    <a href="#dogadjaji" class="nav-link">Događaji</a>
+    <a href="#karta" class="nav-link">Karta</a>
+    <a href="#kviz" class="nav-link">Kviz</a>
+    <button class="btn btn-join">Pridruži se</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-inner reveal">
+    <span class="pill">
+      <span class="pill-dot"></span>
+      Kultura kao temelj identiteta
+    </span>
+
+    <h1>Tvoj Zagreb,<br/>Tvoja kultura</h1>
+
+    <p class="lead">
+      Upoznaj baštinu, institucije i suvremene programe grada kroz jasno strukturiran, mladima prilagođen vodič.
+      Platforma spaja informacije o događanjima, lokacijama i kulturnim sadržajima na jednom mjestu.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary">Započni kulturno putovanje</button>
+      <button class="btn btn-secondary" onclick="location.href='#dogadjaji'">Pregledaj događaje</button>
+    </div>
+  </div>
+</section>
+
+<!-- ZAŠTO -->
+<section class="section why">
+  <div class="container center reveal">
+    <h2>Zašto je kultura važna za tebe?</h2>
+    <p class="subtitle">
+      Kultura nije samo sadržaj – ona je sustav vrijednosti koji oblikuje identitet zajednice.
+      Naš cilj je približiti povijest, umjetnost i tradiciju kroz praktične i relevantne formate.
+    </p>
+
+    <div class="grid-4">
+      <div class="mini-card hover-lift">
+        <div class="icon-circle">❤</div>
+        <h3>Ponos</h3>
+        <p>Svjesno njegovanje baštine i lokalnog identiteta</p>
+      </div>
+
+      <div class="mini-card hover-lift">
+        <div class="icon-circle">👥</div>
+        <h3>Zajednica</h3>
+        <p>Povezivanje mladih kroz zajednička kulturna iskustva</p>
+      </div>
+
+      <div class="mini-card hover-lift">
+        <div class="icon-circle">🏅</div>
+        <h3>Izvrsnost</h3>
+        <p>Promicanje kvalitetnih programa i dostupnosti sadržaja</p>
+      </div>
+
+      <div class="mini-card hover-lift">
+        <div class="icon-circle">📈</div>
+        <h3>Razvoj</h3>
+        <p>Osobni i profesionalni rast kroz kulturu i znanje</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOGAĐAJI -->
+<section id="dogadjaji" class="section">
+  <div class="container reveal">
+    <div class="section-head">
+      <div>
+        <h2>Događaji za mlade</h2>
+        <p class="subtitle">Odabrani programi: besplatni, pristupačni i edukativno vrijedni</p>
+      </div>
+      <div class="section-icon">📅</div>
+    </div>
+
+    <div class="grid-3">
+      <!-- 1 -->
+      <article class="card hover-lift">
+        <div class="card-topline red"></div>
+        <div class="card-head">
+          <span class="chip">MUZEJ</span>
+          <span class="price">0 €</span>
+        </div>
+        <h3>Besplatni vodič kroz MSU</h3>
+        <p>Stručno vođenje i kontekstualno tumačenje suvremene umjetnosti.</p>
+        <div class="meta">
+          <span>🗓 Svaka nedjelja, 11:00</span>
+          <span>📍 Muzej suvremene umjetnosti</span>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card hover-lift">
+        <div class="card-topline blue"></div>
+        <div class="card-head">
+          <span class="chip">FESTIVAL</span>
+          <span class="price">0 €</span>
+        </div>
+        <h3>Noć muzeja 2026</h3>
+        <p>Produljeno radno vrijeme i poseban program u više institucija.</p>
+        <div class="meta">
+          <span>🗓 31. siječnja 2026.</span>
+          <span>📍 Cijeli Zagreb</span>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card hover-lift">
+        <div class="card-topline orange"></div>
+        <div class="card-head">
+          <span class="chip">GLAZBA</span>
+          <span class="price">5 €</span>
+        </div>
+        <h3>Mladi glazbenici HNK</h3>
+        <p>Koncert mladih izvođača uz studentske pogodnosti.</p>
+        <div class="meta">
+          <span>🗓 15. veljače 2026.</span>
+          <span>📍 Hrvatsko narodno kazalište</span>
+        </div>
+      </article>
+
+      <!-- 4 (novo - besplatno) -->
+      <article class="card hover-lift">
+        <div class="card-topline blue"></div>
+        <div class="card-head">
+          <span class="chip">RADIONICA</span>
+          <span class="price">0 €</span>
+        </div>
+        <h3>Kreativna radionica stripa</h3>
+        <p>Uvod u storyboard, lik i kratku narativnu formu uz mentora.</p>
+        <div class="meta">
+          <span>🗓 Subota, 10:00</span>
+          <span>📍 Kulturni centar (radionički prostor)</span>
+        </div>
+      </article>
+
+      <!-- 5 (novo - besplatno) -->
+      <article class="card hover-lift">
+        <div class="card-topline red"></div>
+        <div class="card-head">
+          <span class="chip">OBILAZAK</span>
+          <span class="price">0 €</span>
+        </div>
+        <h3>Vođeni obilazak Donjeg grada</h3>
+        <p>Urbanistički razvoj, arhitektura i ključne točke kulturne memorije.</p>
+        <div class="meta">
+          <span>🗓 Petak, 18:00</span>
+          <span>📍 Start: Trg bana Jelačića</span>
+        </div>
+      </article>
+
+      <!-- 6 (novo - besplatno) -->
+      <article class="card hover-lift">
+        <div class="card-topline orange"></div>
+        <div class="card-head">
+          <span class="chip">PREDAVANJE</span>
+          <span class="price">0 €</span>
+        </div>
+        <h3>Kako čitati grad</h3>
+        <p>Predavanje o simbolima, slojevima povijesti i kulturnim praksama Zagreba.</p>
+        <div class="meta">
+          <span>🗓 Srijeda, 19:00</span>
+          <span>📍 Gradska knjižnica</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- BAŠTINA -->
+<section id="bastina" class="section soft">
+  <div class="container center reveal">
+    <h2>Naša kulturna baština</h2>
+    <p class="subtitle">
+      Iza poznatih lokacija često se kriju priče koje objašnjavaju kako se grad razvijao.
+      Upoznaj ključne točke baštine kroz kratke, jasne opise i kontekst.
+    </p>
+
+    <div class="grid-3">
+      <!-- 1 -->
+      <article class="img-card hover-lift">
+        <div class="img-card-media" style="background-image:url('images/katedrala.jpg')"></div>
+        <div class="img-card-body">
+          <div class="badge-small">1093.</div>
+          <h3>Zagrebačka katedra</h3>
+          <p>Simbol grada i važna referentna točka sakralne arhitekture.</p>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="img-card hover-lift">
+        <div class="img-card-media" style="background-image:url('images/gornji grad.jpg')"></div>
+        <div class="img-card-body">
+          <div class="badge-small">13. st.</div>
+          <h3>Gornji grad</h3>
+          <p>Povijesna jezgra s institucionalnom i kulturnom važnosti.</p>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="img-card hover-lift">
+        <div class="img-card-media" style="background-image:url('images/kamenitavrata.jpg')"></div>
+        <div class="img-card-body">
+          <div class="badge-small">1266.</div>
+          <h3>Kamenita vrata</h3>
+          <p>Mjesto snažne tradicije, legende i urbanog kontinuiteta.</p>
+        </div>
+      </article>
+
+      <!-- 4 (novo) -->
+      <article class="img-card hover-lift">
+        <div class="img-card-media" style="background-image:url('images/zrinjevac.jpg')"></div>
+        <div class="img-card-body">
+          <div class="badge-small">1876.</div>
+          <h3>Zrinjevac</h3>
+          <p>Ključni dio “zelene potkove” i reprezentativni javni prostor grada.</p>
+        </div>
+      </article>
+
+      <!-- 5 (novo) -->
+      <article class="img-card hover-lift">
+        <div class="img-card-media" style="background-image:url('images/mirogoj.jpg')"></div>
+        <div class="img-card-body">
+          <div class="badge-small">1876.</div>
+          <h3>Mirogoj</h3>
+          <p>Arhitektonski i memorijalni kompleks iznimne kulturne vrijednosti.</p>
+        </div>
+      </article>
+
+      <!-- 6 (novo) -->
+      <article class="img-card hover-lift">
+        <div class="img-card-media" style="background-image:url('images/hnk.jpg')"></div>
+        <div class="img-card-body">
+          <div class="badge-small">1895.</div>
+          <h3>Hrvatsko narodno kazalište</h3>
+          <p>Institucija nacionalne kulture i prepoznatljiv simbol historicizma.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="map-box hover-lift">
+  <h3 class="h3">Interaktivna kulturna karta Zagreba</h3>
+
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177883.25768654494!2d15.964364100000001!3d45.84277485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d692c902cc39%3A0x3a45249628fbc28a!2sZagreb%2C%20Hrvatska!5e0!3m2!1shr!2sba!4v1770563070029!5m2!1shr!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+
+    
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KVIZ -->
+<section id="kviz" class="section soft">
+  <div class="container center reveal">
+    <h2>Kviz znanja o Zagrebu</h2>
+    <p class="subtitle">Provjeri znanje kroz kratka pitanja i uči kroz objašnjenja</p>
+
+    <div class="quiz-box hover-lift">
+      <div class="quiz-top">
+        <span class="q-left">Pitanje 1 od 5</span>
+        <span class="q-right">Bodovi: <b id="score">0</b></span>
+      </div>
+
+      <div class="progress"><div class="bar" id="bar"></div></div>
+
+      <h3>U kojoj godini je Zagreb postao glavni grad Hrvatske?</h3>
+
+      <div class="answers">
+        <button class="answer" data-a="1557">1557.</button>
+        <button class="answer" data-a="1667">1667.</button>
+        <button class="answer" data-a="1777">1777.</button>
+        <button class="answer" data-a="1991">1991.</button>
+      </div>
+
+      <p id="result" class="result"></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container center reveal">
+    <div class="sparkle">✦</div>
+    <h2>Postani dio kulturnog pokreta</h2>
+    <p class="subtitle">
+      Prati relevantne programe, prijedloge i vodiče – sadržaj kuriran za mlade i studente.
+    </p>
+
+    <div class="cta-form">
+      <input type="email" placeholder="Tvoja email adresa" />
+      <button class="btn btn-cta">Prijavi se</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-logo">
+        <h3>Zagreb Culture</h3>
+      </div>
+      <p>Povezujemo mlade s kulturnim institucijama i programima grada Zagreba.</p>
+    </div>
+
+    <div>
+      <h4>Sadržaj</h4>
+      <a href="#bastina">Baština</a>
+      <a href="#dogadjaji">Događaji</a>
+      <a href="#karta">Karta</a>
+      <a href="#kviz">Kviz</a>
+    </div>
+
+    <div>
+      <h4>Informacije</h4>
+      <a href="#">O nama</a>
+      <a href="#">Kontakt</a>
+      <a href="#">Partneri</a>
+      <a href="#">Volontiraj</a>
+    </div>
+
+    <div>
+      <h4>Prati nas</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    © 2026 Zagreb Culture. Kulturna platforma za mlade Zagrepčane.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
